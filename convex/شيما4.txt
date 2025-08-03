@@ -1,8 +1,0 @@
-// convex/schema.ts
-users: defineTable({
-  // ...
-  verificationEmailSent: v.optional(v.boolean()),
-  verificationEmailId: v.optional(v.string()),
-  verificationEmailSentAt: v.optional(v.number()),
-  // ...
-})
