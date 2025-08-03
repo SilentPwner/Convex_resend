@@ -1,0 +1,123 @@
+{
+  "name": "lifesync",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy",
+    "preview": "next build && next start",
+    "lint": "eslint . --fix",
+    "prepare": "husky install",
+    "analyze": "convex analyze"
+  },
+  "dependencies": {
+    // === الأساسيات ===
+    "next": "^14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+
+    // === Convex ===
+    "convex": "^1.12.0",
+    "@convex-dev/next": "^0.2.0",
+    "@convex-dev/cli": "^1.12.0",
+
+    // === المصادقة ===
+    "next-auth": "^4.24.7",
+    "@clerk/nextjs": "^4.29.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+
+    // === البريد الإلكتروني ===
+    "resend": "^3.0.0",
+    "@react-email/components": "^0.0.9",
+    "react-email": "^2.0.0",
+
+    // === الذكاء الاصطناعي ===
+    "openai": "^4.28.4",
+    "@anthropic-ai/sdk": "^0.18.0",
+    "groq-sdk": "^1.0.0",
+
+    // === الواجهة الأمامية ===
+    "tailwindcss": "^3.4.0",
+    "shadcn-ui": "^0.7.0",
+    "@radix-ui/react-dropdown-menu": "^2.0.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.294.0",
+    "@tremor/react": "^3.14.0",
+    "react-chartjs-2": "^5.2.0",
+    "chart.js": "^4.4.1",
+
+    // === إدارة النماذج ===
+    "zod": "^3.22.4",
+    "react-hook-form": "^7.49.0",
+    "@hookform/resolvers": "^3.3.0",
+
+    // === PDF والمعالجة ===
+    "pdf-lib": "^1.17.1",
+    "html-pdf": "^3.0.1",
+    "puppeteer": "^21.7.0",
+
+    // === المدفوعات ===
+    "stripe": "^12.12.0",
+    "coinbase-commerce-node": "^1.0.4",
+    "bitcoinjs-lib": "^6.1.0",
+
+    // === المزامنة دون اتصال ===
+    "idb": "^7.1.1",
+    "workbox-webpack-plugin": "^7.0.0",
+    "next-pwa": "^5.6.0",
+
+    // === الأمان ===
+    "crypto-js": "^4.1.1",
+    "helmet": "^7.1.0",
+    "rate-limiter-flexible": "^2.4.1",
+
+    // === الأدوات المساعدة ===
+    "date-fns": "^2.30.0",
+    "axios": "^1.6.2",
+    "lodash": "^4.17.21",
+    "qs": "^6.11.2"
+  },
+  "devDependencies": {
+    // === التطوير ===
+    "@types/bcryptjs": "^2.4.2",
+    "@types/crypto-js": "^4.1.1",
+    "@types/pdf-lib": "^1.16.2",
+    "@types/chart.js": "^2.9.41",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.3",
+    "prettier": "^3.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+
+    // === الاختبار ===
+    "jest": "^29.7.0",
+    "@testing-library/react": "^14.0.0",
+    "cypress": "^13.6.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

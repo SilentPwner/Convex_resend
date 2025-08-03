@@ -1,0 +1,19 @@
+{
+  "teamSlug": "your-team-name",
+  "projectSlug": "lifesync-resend",
+  "prodDeployment": "your-prod-deployment-id",
+  "components": {
+    "resend": {
+      "templates": [
+        "verification",
+        "price-alert", 
+        "donation-receipt"
+      ],
+      "features": [
+        "tone-analysis",
+        "scheduled-emails",
+        "tracking-pixels"
+      ]
+    }
+  }
+}
